@@ -1,0 +1,189 @@
+body p span{
+    font-family: 'Roboto', sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+body .container{
+    max-width: 1480px;
+}
+/******************************************************
+navbar
+
+***************************************************/
+.primary-menu{}
+.primary-menu li{
+    position: relative;
+}
+.primary-menu li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+    padding: 10px 24px;
+    font-weight: 500;
+}
+
+.primary-menu li ul{
+    position: absolute;
+    width: 170px;
+ 
+    padding: 0;
+    left: 0;
+    top: 197%;
+    height: 135px;
+    line-height: 29px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ;
+    transition-timing-function: ease-in-out;
+   
+
+}
+.primary-menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fas.fa-chevron-down {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+.src-icon{ 
+ 
+    width: 40px;
+    font-size: 25px;
+    display: block;
+    margin-right: 16px;
+    border-right: 1px solid #ddd;
+}
+
+.call{
+    width: 300px;
+}
+
+.call-icon.clearfix {
+  font-size: 30px;
+  display: inline-block;
+  float: left;
+  margin-right: 21px;
+  color: #E83B3E;
+  position: relative;
+  top: 9px;
+  
+}
+
+.num-area span {
+    font-size: 20px;
+  }
+  .num-area a {
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+  }
+
+  .btn.btn-primary {
+    background: #E83B3E;
+    
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    border: #E83B3E;
+    z-index: 1;
+  }
+  .btn-primary::after{
+      background: #111;
+      content: "";
+      position: absolute;
+      width:0;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index:-1;
+      transition: 2s;
+      
+    
+  }.btn-primary:hover::after{
+    width: 100%;
+}
+.button{
+    position: relative;
+    left: -58px;
+}
+/******************************************************
+Banner
+
+***************************************************/
+#banner{
+    background: url('images/main-banner2.jpg') no-repeat top center;
+    background-size:cover ;
+    background-attachment: fixed;
+   
+
+}
+.banner-wrap{
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.banner-content span {
+    color: #1f1e1e;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .banner-content h1 {
+    font-size: 68px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  
+.banner-content p {
+    color: #606060;
+    font-size: 20px;
+    max-width: 691px;
+    margin-bottom: 30px;
+     
+}
+
+.header-social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+.header-social .social-sp::after{
+    position: absolute;
+    content: "";
+    background: #111;
+    top:18px;
+    left: 88px;
+    width: 38px;
+    height: 1px;
+
+}
+.header-social ul li a i {
+    color: #111;
+    font-size: 25px;
+    padding: 10px 7px;
+  }
